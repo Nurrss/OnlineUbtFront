@@ -1,0 +1,40 @@
+@import "./reset.css";
+@import url('../src/fonts/fonts.css');
+
+@font-face {
+	font-family: "SF Pro Display Medium";
+	src: url('/client/src/fonts/SFProDisplay-Medium.ttf');
+}
+
+:root{
+	--body-font: 'SF Pro Display Medium', sans-serif;
+	--bigger-font-size:32px;
+	--big-font-size:24px;
+	--normal-font-size: 20px;
+	--small-font-size: .75rem;
+	--smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold:700;
+}
+
+
+._container{
+	margin: 0 auto;
+	max-width: 1460px;
+	padding: 0 60px 0 120px;
+}
+
+.main__title{
+	font-family: var(--body-font);
+	color: #000;
+	font-weight: var(--font-semi-bold);
+}
+
+.minor__title{
+	font-size: var(--big-font-size);
+	color: #000;
+	font-weight: var(--font-bold);
+}

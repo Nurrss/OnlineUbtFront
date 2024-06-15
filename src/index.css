@@ -1,0 +1,9 @@
+@import "./_normalize.scss";
+
+
+
+._container{
+	margin: 0 auto;
+	max-width: 1460px;
+	padding: 0 60px 0 120px;
+}

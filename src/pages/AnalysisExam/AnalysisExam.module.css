@@ -1,0 +1,251 @@
+/* .container {
+  background: #f7f7f7;
+  margin: 50px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "SF Pro Display";
+  height: 100%;
+} */
+
+.examContainer {
+  height: 100%;
+}
+
+.searchBar {
+  /* display: flex;в
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    text-decoration: underline; */
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  /* background: #f7f7f7; */
+  /* border: 1px solid #ccc;  */
+  display: flex;
+  /* align-items: center; */
+  /* padding: 0 10px; */
+  /* box-sizing: border-box; */
+}
+
+.headerRow {
+  background-color: #009172;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.searchBar input[type='text'] {
+  flex-grow: 1; /* Allow the input to grow to fill the space */
+  border: none; /* Remove the default input border */
+  height: 100%; /* Full height */
+  font-size: 16px; /* Font size */
+  padding: 0 10px; /* Padding inside the input */
+}
+
+.searchBar input[type='text']::placeholder {
+  color: #999; /* Placeholder text color */
+  display: flex;
+}
+
+.searchBar button {
+  background: none; /* No background for the button */
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Change the cursor on hover */
+}
+
+.search-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.close-icon {
+  width: 10px;
+  height: 10px;
+  float: left;
+}
+
+.search-icon::before {
+  content: '\1F50D'; /* Unicode for a magnifying glass */
+}
+
+.close-icon::before {
+  content: '\274C'; /* Unicode for a cross mark */
+}
+
+.first_container {
+  justify-content: start;
+  gap: 800px;
+  display: flex;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 0 0 1rem 1rem;
+  padding-top: 1rem;
+}
+
+.createButton {
+  background-color: #009172;
+  width: 20%;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: left;
+}
+
+.form-group3 {
+  position: relative;
+  display: flex;
+  gap: 100px;
+}
+
+.form-group3 input {
+  width: 150%;
+  padding: 10px;
+  /* border: 2px solid #ccc; */
+  border-radius: 4px;
+  /* gap: 30px; */
+  /* margin-top: 40px; */
+}
+
+.form-group3 label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  /* color: #999; */
+}
+
+.form-group3.focused label {
+  top: -10px;
+  left: 10px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-main {
+  text-align: left;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  width: 400px;
+  border-radius: 8px;
+  height: 450px;
+}
+
+.modal_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal_container h2 {
+  text-align: left;
+  font-size: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  /* margin-left: 150px; */
+}
+
+.saveButton {
+  background-color: #fff;
+  text-decoration: #009172;
+  color: #009172;
+}
+.cancelButton {
+  background-color: #fff;
+  text-decoration: #000;
+  color: #000;
+}
+
+.participants {
+  margin-right: 10px;
+}
+
+.icons {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 20px;
+  margin-right: -30px;
+}
+
+@media (max-width: 992px) {
+  .first_container {
+    gap: 100px;
+  }
+  .participants {
+    margin-right: -30px;
+  }
+  .icons {
+    margin-right: -30px;
+    gap: 5px;
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 768px) {
+  /* .container {
+      width: 100%;
+      margin: 30px;
+      padding: 20px;
+    } */
+  .first_container {
+    gap: 70px;
+  }
+}

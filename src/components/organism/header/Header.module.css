@@ -1,0 +1,70 @@
+.header {
+	background-color: #009172;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	position: relative; 
+	z-index: 2;
+  }
+  
+  .burger_icon {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	cursor: pointer;
+	font-size: 24px;
+	transition: 1s;
+  }
+
+  .menu_icon{
+	margin-left: 4rem;
+  }
+  
+  .header_part2{
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+  }
+
+  .userLogo{
+	width: 2rem;
+  }
+
+  .user_name{
+	font-size: 18px;
+  }
+
+  @media screen and (max-width: 800px) {
+	.logo{
+		display: none;
+	}
+	.menu_icon{
+		margin-left: 2rem;
+	}
+  }
+
+  @media screen and (max-width: 600px){
+	.header_part2{
+		gap: 1rem;
+	}
+
+	.burger-icon img{
+		width: 7rem;
+	}
+  }
+
+  @media screen and (max-width: 400px){
+	.header_part2{
+		gap: .5rem;
+	}
+
+	.header_part2 .expanded{
+		display: none;
+	}
+
+	.user_name{
+		font-size: 16px;
+	}
+  }

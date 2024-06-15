@@ -1,0 +1,136 @@
+/* ExamPage.module.css */
+
+.wholeContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 3rem 0 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #f0f0f0;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading h1{
+    font-size: 30px;
+  }
+
+  .titleButtonsContainer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* gap: 8rem; */
+  }
+
+  .titleButtonsContainer h4{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .languageToggle {
+    display: flex;
+  }
+  
+  .languageButton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: .5rem;
+  }
+  
+  .languageButtonActive {
+    background-color: #009172;
+    color: white;
+  }
+  
+  .subjectButton {
+    padding: 10px;
+    border-radius: .5rem;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .chosingBtns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .btnGap{
+    margin-left: 9rem;
+  }
+  
+  .startButton {
+    padding: 15px 30px;
+    background-color: #00897b;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .subjectButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .selected {
+    background-color: #009172;
+    color: white;
+  }
+  
+  .unselected {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #f1f1f1;
+  }
+  
+  .subjectButton.unselected:hover {
+    background-color: #ddd;
+  }
+
+  .btnCont{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .startButton{
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .titleButtonsContainer{
+      gap: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .container{
+      gap: 3rem;
+    }
+
+    .titleButtonsContainer{
+      gap: 1rem;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .btnGap{
+      margin: 0;
+    }
+  }

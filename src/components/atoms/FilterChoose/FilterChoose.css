@@ -1,0 +1,10 @@
+.ant-radio-button-wrapper {
+    border-radius: 0 !important;
+    display: block !important;
+  }
+
+.ant-radio-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

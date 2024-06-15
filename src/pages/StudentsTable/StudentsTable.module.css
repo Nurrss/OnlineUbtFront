@@ -1,0 +1,127 @@
+.searchContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.studentsTable {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.studentsRow {
+  display: flex;
+  align-items: center;
+}
+
+.searchBtn {
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #091;
+  cursor: pointer;
+}
+
+.searchInput {
+  width: 15rem;
+}
+
+.pageController {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding: 1rem 6rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.excelReloadCont {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.excelBtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.excelBtn img {
+  width: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .tableCont {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .searchBtn {
+    width: 3rem;
+    font-size: 10px;
+  }
+
+  .searchInput {
+    width: 10rem;
+    font-size: 12px;
+  }
+
+  .pageController {
+    padding: 1rem;
+  }
+
+  .table_row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent line breaks */
+  }
+
+  .table_items {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 200px; /* Set a fixed width for each table cell */
+    padding: 8px; /* Add padding for better spacing */
+  }
+}
+
+.input_group {
+  position: relative;
+}
+
+.form_input_label {
+  top: -25px;
+  left: 10px;
+  color: #181d2f;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+}
+
+.tableCont {
+  width: 100%;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media screen and (max-width: 800px) {
+  .tableHeader {
+    padding: 0.5rem 1rem;
+  }
+}

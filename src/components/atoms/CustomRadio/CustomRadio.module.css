@@ -1,0 +1,14 @@
+.radioButton{
+    width: 616px;
+    height: 72px;
+    border-radius: 6px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.radioGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

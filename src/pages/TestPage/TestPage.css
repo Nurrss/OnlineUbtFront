@@ -1,0 +1,268 @@
+.testContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  /* width: 80%; */
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.bgShadow{
+  opacity: .5;
+}
+
+.mainContainer {
+    position: relative;
+  }
+  
+  .responsiveContainer {
+    /* Styles for the initial container */
+    background-color: #ddd;
+    padding: 10px;
+  }
+  
+  .popupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .warningIcon{
+    font-size: 30px;
+  }
+
+  .popupContainer p{
+    margin: 0;
+  }
+
+  .popupButton{
+    background-color: #009172;
+    color: #fff;
+    font-size: 16px;
+    width: 8rem;
+    padding: .5rem;
+    text-align: center;
+    border-radius: .5rem;
+  }
+
+  .clicked{
+    transform: rotate(45deg);
+  }
+  
+  /* .popup-container button {
+    margin-top: 10px;
+  } */
+  
+  .popup-button {
+    /* Styles for the button when the container is hidden */
+    background-color: #009172;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .iconTextContainer p{
+    margin: 0;
+  }
+
+  .popup-button:hover {
+    /* Styles for button on hover */
+    background-color: #009172;
+  }
+
+  .mainContent{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 1.5;
+  }
+
+  .givenTaskContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: .5rem;
+    gap: 1.5rem;
+    width: 60%;
+    border-radius: 20px;
+  }
+
+  .mainInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    font-size: 20px;
+    text-align: start;
+  }
+
+  .iconTextContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F7F7F7;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .questionContainer{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background-color: #f7f7f7;
+  }
+
+  .rightSideInfo{
+    display: flex; 
+    flex-direction: column; 
+    width: 30%;
+    height: 100%;
+    gap: 5rem;
+    align-items: end
+  }
+
+  .answerBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .prevNextBtnsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .iconButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #009172;
+    width: 120px;
+    padding: .5rem .7rem;
+    border-radius: .3rem;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .iconButton h5 {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .btnIcon{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+  }
+
+  .rightSideInfo button {
+    background-color: #009172;
+    color: #fff;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+  }
+
+  .choicesContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: .5rem;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .radioLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .radioImg {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .responsiveContainer{
+      display: none;
+    }
+    
+    .popup-button {
+      display: block;
+    }
+    
+    .mainContent{
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {  
+    .popup-container {
+      height: fit-content;
+    }
+
+    .iconButton{
+      justify-content: center;
+    }
+
+    .btnIcon{
+      font-size: 20px;
+      height: 25px;
+    }
+
+    .iconButton h5{
+      display: none;
+    }
+
+    .mainContent{
+      flex-direction: column;
+      width: 100%;
+      order: 2;
+    }
+
+    .mainInfo{
+      font-size: 15px;
+    }
+
+    .iconTextContainer{
+      font-size: 15px;
+      padding: 5px;
+    }
+
+  }

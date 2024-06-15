@@ -1,0 +1,21 @@
+.percent{
+  /* position: relative; */
+  width: calc(100% - 150px);
+  height: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  overflow: hidden;
+}
+
+.progress{
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #009172, #009172);
+  animation: animate 2s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from{
+    width: 0;
+  }
+}
